@@ -17,8 +17,8 @@ No extra model call. No Keystone server. Chat text never leaves the browser.
 ## Install from source
 
 ```bash
-git clone <this-repo>
-cd keystone-session-continuity
+git clone https://github.com/MaasAhsan/Keystone-Session-Continuity.git
+cd Keystone-Session-Continuity
 npm run build
 ```
 

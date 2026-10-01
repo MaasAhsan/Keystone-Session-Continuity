@@ -4,7 +4,14 @@
   "private": true,
   "type": "module",
   "description": "Corporate session continuity for AI chats. Pack a compact baton and continue on another model.",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaasAhsan/Keystone-Session-Continuity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaasAhsan/Keystone-Session-Continuity/issues"
+  },
+  "homepage": "https://github.com/MaasAhsan/Keystone-Session-Continuity#readme",
   "scripts": {
     "build": "node build.mjs",
     "test": "node test/packer.test.mjs",
