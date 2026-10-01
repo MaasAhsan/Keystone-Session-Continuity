@@ -1,0 +1,13 @@
+{
+  "name": "keystone-session-continuity",
+  "version": "0.1.2",
+  "private": true,
+  "type": "module",
+  "description": "Corporate session continuity for AI chats. Pack a compact baton and continue on another model.",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test/packer.test.mjs",
+    "pack": "node build.mjs && node scripts/pack-release.mjs"
+  }
+}

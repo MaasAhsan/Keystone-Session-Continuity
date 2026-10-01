@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Keystone</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <canvas id="ascii" aria-hidden="true"></canvas>
+  <main>
+    <header>
+      <div class="brand">
+        <img class="mark" src="../icons/icon-32.png" width="22" height="22" alt="">
+        <div>
+          <div class="name">Keystone</div>
+          <div class="sub">Session continuity</div>
+        </div>
+      </div>
+      <span id="status" class="status" aria-live="polite"></span>
+    </header>
+
+    <p id="meta" class="meta">Open a supported chat to pack a baton.</p>
+
+    <label class="field">
+      <span>Baton</span>
+      <textarea id="packet" rows="11" spellcheck="false" placeholder="No thread loaded yet."></textarea>
+    </label>
+
+    <label class="switch">
+      <span>Attach last 8 turns</span>
+      <input id="recent" type="checkbox" checked>
+    </label>
+
+    <div class="row">
+      <button type="button" id="refresh">Rebuild</button>
+      <button type="button" id="copy">Copy</button>
+      <button type="button" id="download">Download</button>
+    </div>
+
+    <p class="label">Continue on</p>
+    <div id="dests" class="dests"></div>
+
+    <p class="privacy">Keystone reads visible messages on this chat page to build a handoff prompt. Nothing is sent to our servers. We do not have servers for this.</p>
+  </main>
+  <script src="../shared/ascii.js"></script>
+  <script src="../shared/sites.js"></script>
+  <script src="../shared/estimate.js"></script>
+  <script src="../shared/packer.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
